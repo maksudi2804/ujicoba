@@ -1,0 +1,32 @@
+Insert :
+
+git init
+git add *
+git -m commit "Versi Commit"
+git remote add https://github.com/maksudi2804/.git
+git pull --rebase origin master
+git push origin master
+==============================
+Reupload
+
+git reset --mixed origin/master
+git add .
+git commit -m "This is a new commit for what I originally planned to be amended"
+git push origin master
+=============================
+Upload satu file
+
+git add file.php
+git commit -m "Versi Commit"
+git remote add https://github.com/maksudi2804/repository.git
+git pull --rebase origin master
+git push origin master
+============================
+Upload ke orang lain
+
+git add namafile.php
+git status
+git rebase --continue
+git remote add https://github.com/nanggara/repository.git
+git pull --rebase origin master
+git push origin master
